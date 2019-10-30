@@ -6,16 +6,17 @@ public class TeaParty {
 	boolean isKnited;
 	public String welcome(String name, boolean isWoman, boolean isKnighted) {
       if(isWoman == true && isKnighted == true) {
-    	  return "Lady";
-      }
-      if(isWoman == true && isKnighted == false){
-    	  return "Ms.";
-      }
-      if(isWoman == false && isKnighted == true) {
-    	  return "Sir";
-      }
-      if(isWoman == false && isKnighted == false){
-    	  return "Mr.";
-      }
+    	  return "Hello Lady " + name;
+      } 
+      else if(isWoman == true && isKnighted == false){
+    	  return "Hello Ms. " + name;
+      } 
+      else if(isWoman == false && isKnighted == true) {
+    	  return "Hello Sir " + name;
+      } 
+      else {
+    	  return "Hello Mr. " + name;
+      } 
     }
+	
 }
